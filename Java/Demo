@@ -1,1 +1,9 @@
-
+class Square{
+2. double height;
+3. double width;
+4. }
+5. class MyProg{
+6. public static void main(String[] args) {
+7. Square s1=;new Square();
+8. }
+9. }
