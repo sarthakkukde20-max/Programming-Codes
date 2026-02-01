@@ -24,4 +24,8 @@ class BoxDemo2 {
 
         // compute volume of first box
         vol = mybox1.width * mybox1.height * mybox1.depth;
-        System.out.println("
+        System.out.println("Volume is"+ vol);
+        // compute volume of first box
+        vol = mybox1.width * mybox2.height * mybox2.depth;
+        System.out.println("Volume is"+ vol);
+}
