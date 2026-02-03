@@ -1,0 +1,11 @@
+class MyConst {
+    
+    // Default Constructor
+    MyConst() {
+        // Default Constructor...
+    }
+
+    public static void main(String[] args) {
+        MyConst c = new MyConst();
+    }
+}
