@@ -1,0 +1,25 @@
+// Main Class
+class MyMain {
+    public static void main(String[] args) {
+        Cube c = new Cube(10, 10, 10);
+        c.calVolume();
+    }
+}
+
+class Cube {
+    double width, height, depth;
+
+    // Parameterized Constructor
+    Cube(double w, double h, double d) {
+        System.out.println("Constructing cube");
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    // Method to calculate and print volume
+    void calVolume() {
+        System.out.println("Volume = " + width * height * depth);
+    }
+}
+
