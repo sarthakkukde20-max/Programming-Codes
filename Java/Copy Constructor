@@ -1,0 +1,37 @@
+// Main Class
+class MyProgramCopy {
+    public static void main(String[] args) {
+        Student s1 = new Student("darshan", 101);
+
+        // Invoking Copy Constructor
+        Student s2 = new Student(s1);
+
+        s1.display();
+        s2.display();
+    }
+}
+
+class Student {
+    String name;
+    int rollno;
+
+    // Parameterized Constructor
+    Student(String s_name, int s_roll) {
+        System.out.println("Constructor Invoked");
+        this.name = s_name;
+        this.rollno = s_roll;
+    }
+
+    // Copy Constructor
+    Student(Student s) {
+        System.out.println("CopyConstructor Invoked");
+        this.name = s.name;
+        this.rollno = s.rollno;
+    }
+
+    // Display Method
+    public void display() {
+        System.out.print("name=" + name);
+        System.out.println("  rollno=" + rollno);
+    }
+}
