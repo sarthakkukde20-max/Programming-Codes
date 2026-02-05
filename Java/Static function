@@ -1,0 +1,13 @@
+public class MyProgram {
+
+    public static void main(String[] args) {
+        int a = 1, b = 2, c;
+
+        c = add(a, b);    // calling static method
+        System.out.println(c);
+    } // main
+
+    static int add(int i, int j) {
+        return i + j;
+    }
+} // class
