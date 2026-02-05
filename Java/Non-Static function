@@ -1,0 +1,15 @@
+public class MyProgram {
+
+    public static void main(String[] args) {
+        int a = 1, b = 2, c;
+
+        MyProgram mp = new MyProgram();   // object creation
+        c = mp.add(a, b);                 // calling non-static method
+
+        System.out.println(c);
+    } // main
+
+    public int add(int i, int j) {
+        return i + j;
+    }
+} // class
