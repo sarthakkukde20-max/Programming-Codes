@@ -1,0 +1,28 @@
+
+public class ArrayOfObjectDemo {
+    public static void main(String[] args) {
+        Student[] stu = new Student[3];
+
+        stu[0] = new Student(101, "SBJAIN");
+        stu[1] = new Student(102, "OOP");
+        stu[2] = new Student(103, "Java");
+
+        stu[0].printStudentDetail();
+        stu[1].printStudentDetail();
+        stu[2].printStudentDetail();
+    }
+}
+class Student {
+    int rollNo;
+    String name;
+
+    Student(int rollNo, String name) {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
+
+    void printStudentDetail() {
+        System.out.println("| " + rollNo + " | -- | " + name + " |");
+    }
+}
+
