@@ -1,0 +1,35 @@
+public class DemoInterface {
+    public static void main(String[] args) {
+        ParcarClass p = new ParcarClass();
+        p.turnLeft();
+    }
+}
+interface VehicleInterface {
+    int a = 10;
+
+    public void turnLeft();
+    public void turnRight();
+    public void accelerate();
+    public void slowDown();
+}
+abstract class CarClass implements VehicleInterface {
+
+    public void turnLeft() {
+        System.out.println("Left");
+    }
+
+    public void turnRight() {
+        System.out.println("Right");
+    }
+
+    public void accelerate() {
+        System.out.println("Speed");
+    }
+}
+class ParcarClass extends CarClass {
+
+    public void slowDown() {
+        System.out.println("Brake");
+    }
+}
+
