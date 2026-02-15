@@ -1,0 +1,25 @@
+// Demonstration of StringTokenizer Methods
+import java.util.*;
+
+class Geeks {
+    public static void main(String[] args) {
+
+        // Creating a StringTokenizer
+        StringTokenizer st = new StringTokenizer("Welcome to Java");
+        StringTokenizer st1 = new StringTokenizer("");
+
+        // countTokens Method
+        int c = st.countTokens();
+        System.out.println(c);
+
+        // hasMoreTokens Method
+        System.out.println("Welcome to Java: " + st.hasMoreTokens());
+        System.out.println("(Empty String): " + st1.hasMoreTokens());
+
+        // nextElement() Method
+        System.out.println("\nTraversing the String:");
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextElement());
+        }
+    }
+}
